@@ -62,7 +62,7 @@ This document focuses specifically on **on-CPU** resource bottlenecks analysis, 
 
 For that we will rely on toolkits (perf, bcc tools), and hardware specific PMCs (Performance Monitoring Counters), to proceed with:
 
-- Hotspot analysis (pref or bcc tools): to profile code execution and determine which functions are consuming the most time and thus are targets for optimization.
+- Hotspot analysis (perf or bcc tools): to profile code execution and determine which functions are consuming the most time and thus are targets for optimization.
   We'll present two options to collect, report and visualize hotspots either with perf or bcc/BPF tracing tools.
 
 - Call counts analysis: to count events including function calls, enabling us to correlate several calls/components at once, relying on bcc/BPF tracing tools.
